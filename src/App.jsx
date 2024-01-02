@@ -4,7 +4,9 @@ import Homepage from './layout/Homepage'
 function App() {
   return (
     <>
-      <Homepage />
+      <div className='box-border m-0 p-0'>
+        <Homepage />
+      </div>
     </>
   )
 }
