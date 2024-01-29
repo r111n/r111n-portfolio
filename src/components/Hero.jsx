@@ -1,42 +1,39 @@
-import React from 'react'
-import { BiLogoMongodb,BiLogoReact,BiLogoNodejs,BiLogoTailwindCss,BiLogoJava } from "react-icons/bi"
-import { SiExpress } from "react-icons/si"
-import { IoIosArrowRoundForward } from "react-icons/io"
-import Banner from '../assets/banner.jpg'
-import { motion } from 'framer-motion'
+import React, { useRef } from 'react'
+import { FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa"
+import Banner from "../assets/b-2.png"
+import IconReact from "../assets/react.png"
+import IconNode from "../assets/node.png"
+import IconMongo from "../assets/mongo.png"
+import IconEx from "../assets/express.png"
+
 
 const Hero = () => {
   return (
     <>
-    <div className='h-[90vh] font-lato grid grid-cols-1 sm:grid-cols-2'>
-        <div className='order-2 sm:order-1 flex flex-col text-center sm:text-start items-center justify-center'>
-           <div className='px-4 space-y-1'>
-            <motion.h1 initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: .9 }} className='text-4xl'>Hi! I'm <strong className='font-poppins text-blue-700'>Son Anthony Estomagulang</strong></motion.h1>
-                <h3 className='text-md italic -mt-1'>a 3rd year fullstack developer</h3>
-                <div className='flex items-center gap-x-3 text-blue-500 mt-0 sm:mt-2 justify-center sm:justify-start'>
-                    {/* <span><IoIosArrowRoundForward className='text-3xl'/></span> */}
-                    <span className='font-poppins text-slate-800 font-bold'>Tech Stack</span>
-                    <div className='flex text-xl'>
-                        <BiLogoMongodb />
-                        <SiExpress />
-                        <BiLogoReact />
-                        <BiLogoNodejs />
-                        <BiLogoTailwindCss />
-                        <BiLogoJava />
+    <div className='grid grid-cols-1 sm:grid-cols-2 font-lato items-center h-full overflow-hidden'>
+        <div className='text-center sm:text-start flex items-center justify-center mt-0 sm:-mt-28'>
+           <div className='space-y-2'>
+                   <div>
+                        <h5>Get to know me</h5>
+                        <h1 className='text-4xl sm:text-7xl'>Hi, I'm <strong className=' text-green-500'>Son Anthony</strong></h1>
+                   </div>
+                    <p>I'm a third year computer science student. I love learning new techs.</p>
+                    <div className='flex gap-5 text-4xl text-slate-800 justify-center sm:justify-start'>
+                        <FaFacebookF className='p-2 bg-green-100 duration-300 hover:bg-blue-200 rounded-xl hover:cursor-pointer' />
+                        <FaInstagram className='p-2 bg-green-100 duration-300 hover:bg-blue-200 rounded-xl hover:cursor-pointer' />
+                        <FaGithub className='p-2 bg-green-100 duration-300 hover:bg-blue-200 rounded-xl hover:cursor-pointer' />
                     </div>
-                </div>
            </div>
         </div>
-        <div className='hidden sm:grid grid-cols-2 order-1 sm:order-2 overflow-hidden gap-4 px-4'>
-            <div className='col-span-2 bg-blue-500 rounded-xl'>
-
-            </div>
-            <div className='bg-blue-500 rounded-xl bg-[url("../assets/banner.jpg")] bg-cover'>
-
-            </div>
-            <div className='bg-blue-500 rounded-xl'>
-
-            </div>
+        <div>
+            <img src={Banner} />
+           <div className='hidden lg:block'>
+                <img src={IconReact} className='absolute top-[15rem] right-36 -z-10 w-[200px]' />
+                <img src={IconNode} className='absolute top-16 right-[26rem] -z-10 w-[150px]' />
+                <img src={IconMongo} className='absolute top-[20rem] right-[28rem] w-[150px]' />
+                <img src={IconEx} className='absolute bottom-6 right-24 w-[150px]' />
+           </div>
+                
         </div>
     </div>
     </>
