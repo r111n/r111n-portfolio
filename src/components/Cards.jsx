@@ -23,7 +23,7 @@ const Cards = () => {
                 <CiGrid31 className='text-7xl text-slate-700' />
                 <div>
                     <h4 className='text-lg text-slate-700'>Layouting</h4>
-                    <p className='text-sm text-slate-600'>I Started creating static website on grade 10</p>
+                    <p className='text-sm text-slate-600'>I am currently the Layout artist of The NORSUnian</p>
                 </div>
             </div>
         </div>

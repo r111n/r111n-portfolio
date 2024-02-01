@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import Homepage from './layout/Homepage'
+import { motion } from 'framer-motion'
 
 function App() {
   return (
     <>
-      <div className='box-border m-0 p-0'>
+      <motion.div className='box-border m-0 p-0'>
         <Homepage />
-      </div>
+      </motion.div>
     </>
   )
 }
