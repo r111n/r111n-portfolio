@@ -11,15 +11,25 @@ import RevealAni from './animation/RevealAni'
 
 const Hero = () => {
 
+  const clickFb = () => {
+    window.location.href = "https://www.facebook.com/sonanthony.estomagulang.9"
+  }
+  const clickIg = () => {
+    window.location.href = "https://www.instagram.com/sincerelyton/"
+  }
+  const clickGh = () => {
+    window.location.href = "https://github.com/r111n"
+  }
+
   return (
     <>
-    <div className='grid grid-cols-1 md:grid-cols-2 font-lato items-center h-full overflow-hidden'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 font-lato items-center h-full overflow-hidden'>
         <div className='text-center md:text-start flex items-center justify-center mt-0 sm:-mt-28'>
-           <div className='space-y-2 flex items-center md:items-start flex-col justify-center'>
+           <div className='space-y-2 flex items-center lg:items-start flex-col justify-center'>
             <RevealAni>
                    <div>
-                        <h5 className=' text-center sm:text-start'>Get to know me</h5>
-                          <h1 className='text-4xl sm:text-5xl lg:text-6xl xl:text-7xl'>Hi, I'm <strong className=' text-green-600'>Son Anthony</strong></h1>
+                        <h5 className=' text-center lg:text-start'>Get to know me</h5>
+                          <h1 className='text-4xl sm:text-5xl md:text-7xl lg:text-6xl xl:text-7xl'>Hi, I'm <strong className=' text-blue-600'>Son Anthony</strong></h1>
                    </div>
             </RevealAni>
             <RevealAni>
@@ -27,14 +37,14 @@ const Hero = () => {
             </RevealAni>
             <RevealAni>
                     <div className='flex gap-5 text-4xl text-slate-800 justify-center md:justify-start'>
-                        <FaFacebookF className='p-2 bg-green-100 duration-300 hover:bg-blue-200 rounded-xl hover:cursor-pointer' />
-                        <FaInstagram className='p-2 bg-green-100 duration-300 hover:bg-blue-200 rounded-xl hover:cursor-pointer' />
-                        <FaGithub className='p-2 bg-green-100 duration-300 hover:bg-blue-200 rounded-xl hover:cursor-pointer' />
+                        <FaFacebookF onClick={clickFb} className='p-2 bg-blue-100 duration-300 hover:bg-blue-200 rounded-xl hover:cursor-pointer' />
+                        <FaInstagram onClick={clickIg} className='p-2 bg-blue-100 duration-300 hover:bg-blue-200 rounded-xl hover:cursor-pointer' />
+                        <FaGithub onClick={clickGh} className='p-2 bg-blue-100 duration-300 hover:bg-blue-200 rounded-xl hover:cursor-pointer' />
                     </div>
               </RevealAni>
            </div>
         </div>
-        <div className='hidden md:block'>
+        <div className='hidden lg:block'>
             <img src={Banner} />
                 <div className='hidden xl:block'>
                 <img src={IconReact} className='absolute top-[15rem] right-36 -z-10 w-[200px]' />

@@ -36,7 +36,7 @@ const RevealAni = ({children}) => {
             bottom: 4,
             left: 0,
             right: 0,
-            backgroundColor: "#4ade80", 
+            backgroundColor: "#3b82f6", 
             zIndex: 20,
         }}
         >
