@@ -20,7 +20,7 @@ const RevealAni = ({children}) => {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{duration: 0.7, delay: 0.20}}
+        transition={{duration: 0.7, delay: 0.30}}
         >{children}</motion.div>
         <motion.div 
         variants={{

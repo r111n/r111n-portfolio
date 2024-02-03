@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa"
 const Navbar = () => {
   return (
    <header className='w-full'>
-      <nav className='flex justify-around bg-slate-200 shadow-sm p-4 rounded-2xl'>
+      <nav className='flex justify-around bg-slate-300 shadow-sm p-4 rounded-2xl bg-opacity-25 backdrop-blur-md backdrop-filter border border-opacity-18 '>
           <span className='text-green-600 font-poppins text-xl'>R111N</span>
           <ul className='hidden sm:flex gap-x-10 font-poppins text-sm text-slate-800'>
               <li>Home</li>
