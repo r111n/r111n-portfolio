@@ -1,7 +1,7 @@
 {
   "homepage": "https://r111n.github.io/r111n-portfolio/",
   "name": "r111n-portfolio",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
